@@ -1,0 +1,37 @@
+.collapse {
+  width: 47%;
+}
+.collapse__headbarre {
+  background: #ff6060;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+.collapse__headbarre--title {
+  color: white;
+}
+.collapse__headbarre--chevron {
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.collapse__headbarre--chevronUp {
+  transform: rotate(180deg);
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.collapse__descHide {
+  border: solid 2px blue;
+  margin-bottom: 2rem;
+  display: none;
+}
+.collapse__descVisible {
+  display: block;
+  background: #F6F6F6;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}/*# sourceMappingURL=Collapse.css.map */

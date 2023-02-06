@@ -1,0 +1,48 @@
+.collapse {
+  // border: solid 2px violet;
+  width: 47%;
+  // height: 47px;
+  // margin: 4rem 4rem 6rem 12rem;
+
+  &__headbarre {
+    background: #ff6060;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    
+
+    &--title {
+      color: white;
+    }
+
+    &--chevron {
+      margin-top: 0.5rem;
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+    }
+
+    &--chevronUp {
+      transform: rotate(180deg);
+      margin-top: 0.5rem;
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__descHide {
+    border: solid 2px blue;
+    margin-bottom: 2rem;
+    display: none;
+  }
+
+  &__descVisible{
+    display: block;
+    background: #F6F6F6;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    
+  }
+}

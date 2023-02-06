@@ -1,0 +1,44 @@
+.Appheader {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+}
+.Appheader__logo {
+  padding-top: 1rem;
+  width: 190px;
+  height: 68px;
+}
+.Appheader__nav {
+  width: 16rem;
+  margin-left: 70%;
+}
+.Appheader__nav--list {
+  padding-left: 1rem;
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Appheader__nav--listLink {
+  text-decoration: none;
+}
+.Appheader__nav--listItem {
+  margin-right: 10px;
+  color: #ff6060;
+  font-size: 18px;
+  cursor: pointer;
+}
+.Appheader__nav--listItem:hover {
+  border-bottom: solid 2px #ff6060;
+}
+
+@media (max-width: 1440px) {
+  .Appheader {
+    width: 90%;
+  }
+  .Appheader__nav {
+    width: 12rem;
+    margin-left: 60%;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

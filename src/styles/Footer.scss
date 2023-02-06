@@ -1,0 +1,19 @@
+.kasafooter {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__logo {
+    // border: solid 2px white;
+    height: 39px;
+    width: 122px;
+    margin-bottom: 1rem;
+  }
+  &__txt {
+    // border: solid 2px red;
+    color: white;
+  }
+}

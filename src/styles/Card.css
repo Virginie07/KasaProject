@@ -1,0 +1,26 @@
+.carditem {
+  background: #ff6060;
+  height: 340px;
+  width: 340px;
+  border-radius: 20px;
+  margin: 4rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.carditem__lienNav {
+  text-decoration: none;
+}
+.carditem__lienNav--pic {
+  object-fit: cover;
+  border-radius: 20px;
+  height: 340px;
+  width: 340px;
+}
+.carditem__lienNav--titre {
+  color: white;
+  width: 200px;
+  z-index: 1;
+  position: absolute;
+  margin-top: -3.5rem;
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,64 @@
+.fiche {
+  color: #ff6060;
+}
+.fiche__picture {
+  object-fit: cover;
+  height: 415px;
+  width: 100%;
+  border-radius: 30px;
+}
+.fiche__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.fiche__infoDetail--title {
+  font-size: 36px;
+}
+.fiche__infoDetail--lieu {
+  font-size: 18px;
+}
+.fiche__infoHost {
+  display: flex;
+  justify-content: space-between;
+}
+.fiche__infoHost--name {
+  font-size: 18px;
+  margin-top: 0.5rem;
+  height: 52px;
+  width: 93px;
+}
+.fiche__infoHost--pic {
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+.fiche__notes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.fiche__notes--tagList {
+  list-style-type: none;
+  color: white;
+  display: flex;
+}
+.fiche__notes--tagListItem {
+  background: #ff6060;
+  margin: 0.5rem;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  border-radius: 15px;
+}
+.fiche__collapses {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+.fiche__collapses--equipmentList {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 50%;
+}/*# sourceMappingURL=Fiches.css.map */

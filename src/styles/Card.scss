@@ -1,0 +1,40 @@
+.carditem {
+  // border: solid 2px green;
+  background: #ff6060;
+  height: 340px;
+  width: 340px;
+  border-radius: 20px;
+  margin: 4rem 3rem 2rem 3rem;
+  display: flex;
+  // align-items: flex-end;
+  flex-direction: column;
+
+
+  &__lienNav {
+    text-decoration: none;
+    // border: solid 2px purple;
+
+    &--pic{
+      // border: solid 2px blue;
+      object-fit: cover;
+      border-radius: 20px;
+      height: 340px;
+      width: 340px;
+      // margin: 0.4rem 0.4rem 0.4rem 0.6rem;
+      // height: 270px;
+      // width: 320px;
+    }
+
+    &--titre {
+      // border: solid 2px red;
+      // margin: 0.2rem 0.5rem 0.5rem 0.5rem;
+      color: white;
+      width: 200px;
+      z-index: 1;
+      position: absolute;
+      margin-top: -3.5rem;
+      margin-left: 0.5rem;
+      // padding: 0.5rem;
+    }
+  }
+}

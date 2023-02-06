@@ -1,0 +1,9 @@
+.about__collapses {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.about__collapses .collapse {
+  width: 100%;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=About.css.map */

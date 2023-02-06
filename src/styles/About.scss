@@ -1,0 +1,17 @@
+.about{
+
+    &__collapses{
+        // border: solid 2px white;
+        display: flex;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+
+        .collapse{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+
+
