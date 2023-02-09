@@ -21,9 +21,7 @@
             font-size: 36px;
         }
 
-        &--lieu{
-            font-size: 18px;
-        }
+
     }
 
     &__infoHost{
@@ -33,7 +31,6 @@
 
         &--name{
             // border: solid 2px black;
-            font-size: 18px;
             margin-top: 0.5rem;
             height: 52px;
             width: 93px;
@@ -71,7 +68,8 @@
     &__collapses{
         // border: solid 2px blue;
         display: flex;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
         justify-content: space-between;
 
         &--equipmentList{
@@ -80,6 +78,5 @@
             margin-bottom: 0.5rem;
             width: 50%;
         }
-
     }
 }

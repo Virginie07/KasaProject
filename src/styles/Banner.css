@@ -7,6 +7,7 @@
   border-radius: 20px;
 }
 .bannerContain__title {
+  width: 100%;
   color: white;
   font-size: 3rem;
   font-weight: 400;
@@ -15,7 +16,7 @@
   text-align: center;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 13rem;
 }
 
 @media (max-width: 1440px) {

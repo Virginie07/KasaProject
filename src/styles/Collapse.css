@@ -1,5 +1,6 @@
 .collapse {
   width: 47%;
+  margin-bottom: 1rem;
 }
 .collapse__headbarre {
   background: #ff6060;
@@ -7,6 +8,7 @@
   justify-content: space-between;
   border-radius: 5px;
   padding: 0.2rem 1rem 0.2rem 1rem;
+  font-weight: 100;
 }
 .collapse__headbarre--title {
   color: white;
@@ -32,6 +34,5 @@
 .collapse__descVisible {
   display: block;
   background: #F6F6F6;
-  margin-bottom: 2rem;
   padding: 1rem;
 }/*# sourceMappingURL=Collapse.css.map */

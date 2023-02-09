@@ -1,6 +1,7 @@
 .collapse {
   // border: solid 2px violet;
   width: 47%;
+  margin-bottom: 1rem;
   // height: 47px;
   // margin: 4rem 4rem 6rem 12rem;
 
@@ -10,6 +11,7 @@
     justify-content: space-between;
     border-radius: 5px;
     padding: 0.2rem 1rem 0.2rem 1rem;
+    font-weight: 100;
     
 
     &--title {
@@ -41,7 +43,6 @@
   &__descVisible{
     display: block;
     background: #F6F6F6;
-    margin-bottom: 2rem;
     padding: 1rem;
     
   }

@@ -3,12 +3,14 @@
     &__collapses{
         // border: solid 2px white;
         display: flex;
-        margin-bottom: 3rem;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         flex-wrap: wrap;
 
         .collapse{
-            width: 100%;
-            margin-bottom: 2rem;
+            width: 80%;
+            margin-bottom: 2rem;       
         }
     }
     
