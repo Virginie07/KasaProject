@@ -86,8 +86,6 @@ const Fiches = () => {
               className="fiche__infoHost--pic"
               alt="Host picture"
             />
-
-            {/* pour la galerie, mettre 2 chevrons. A l'evenement au clic on parcours le tab pictures */}
           </div>
         </div>
 

@@ -89,4 +89,11 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   width: 50%;
+}
+
+@media (max-width: 885px) {
+  .fiche__notes--tagListItem {
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Fiches.css.map */

@@ -1,0 +1,10 @@
+@media (max-width:945px){
+    .star{
+        border: solid 2px blue;
+        width: 6rem;
+
+        &__pic{
+            width: 1.1rem;
+        }
+    }
+}
