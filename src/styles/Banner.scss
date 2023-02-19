@@ -1,40 +1,108 @@
-.bannerContain{
-    // border: solid 2px green;
+.bannerContain {
+  // border: solid 2px green;
 
-    &__picture{
-        // border: solid 2px violet;
-        object-fit: cover;
-        position: relative;
-        width: 100%;
-        height: 223px;
-        margin-top: 1rem;
-        border-radius: 20px;
+  &__view{
+    // border: solid 2px red;
+    &--picture{
+    // border: solid 2px violet;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 223px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    } 
+
+    &--cover{
+    // background: linear-gradient(transparent, rgba(0, 0, 0, 0.305));
+    background: rebeccapurple;
+    position: absolute;
+    width: 95%;
+    height: 223px;
+    border-radius: 20px;
+    top: 8rem;
     }
-    
-    &__title{
-        // border: solid 2px blue;
-        width: 100%;
-        color: white;
-        font-size: 3rem;
-        font-weight: 400;
-        z-index: 1;
-        position: absolute;
-        text-align: center;
-        left: 0;
-        right: 0;
-        top: 13rem;
-    }
+  }
+  
+  &__title {
+    // border: solid 2px blue;
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 13rem;
+  }
 }
 
+// RESPONSIVE....................
 
-@media (max-width:1440px){
 
-    .bannerContain{
-        &__picture{         
-            width: 90%;
-            height: 223px;          
-        }
+@media (max-width: 1600px) {
+  .bannerContain {
+    &__view{
+      &--cover{
+      width: 93%;
+      }
     }
+  }
 }
 
+@media (max-width: 970px) {
+  .bannerContain {
+    &__title {
+      width: 60%;
+      font-size: 2.5rem;
+      margin-left: 4rem;
+      text-align: left;
+      top: 11rem;
+    }
 
+    &__view{
+      &--cover{
+      width: 88%;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .bannerContain {
+    &__title {
+      width: 56%;
+    }
+  }
+}
+
+@media (max-width: 715px) {
+  .bannerContain {
+    &__title {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bannerContain {
+    &__view{
+
+      &--picture{
+      height: 175px;
+      } 
+  
+      &--cover{
+      width: 82%;
+      height: 175px;
+      }
+    }
+
+    &__title {
+      width: 80%;
+      font-size: 1.9rem;
+    }
+  }
+}

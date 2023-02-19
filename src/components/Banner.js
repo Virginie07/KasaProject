@@ -5,8 +5,12 @@ import "../styles/index.css";
 const Banner = (props) => {
   return (
     <div className="bannerContain">
-      <img src={props.imgpath} className="bannerContain__picture" alt="banner" />
+      <div className="bannerContain__view">
+        <img src={props.imgpath} className="bannerContain__view--picture" alt="banner" />
+        <div className="bannerContain__view--cover"></div>
+      </div>     
       <h1 className="bannerContain__title">{props.texte}</h1>
+      
     </div>
   );
 };

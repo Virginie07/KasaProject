@@ -21,7 +21,7 @@ const Collapse = (props) => {
       </div>
 
       <div className={`${count ? "collapse__descHide" : "collapse__descVisible"}`}>
-        <p>{props.description}</p>
+        <div>{props.description}</div>
       </div>
       
     </div>

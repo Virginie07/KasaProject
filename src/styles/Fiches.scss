@@ -1,13 +1,52 @@
 .fiche{
     color: #ff6060;
-    &__picture{
-        // border: solid 2px blue;
-        object-fit: cover;
-        height: 415px;
-        width: 100%;
-        // width: 1240px;
-        border-radius: 30px;
+
+    &__galerie{
+        display: flex;
+        position: relative;
+        transform: (50%);
+
+        &--arrow{
+            height: 6rem;
+            z-index: 1;
+            position: absolute;           
+            top: 40%;
+            cursor: pointer;
+        }
+        &--arrowBack{           
+            left: 1;
+        }
+    
+        &--arrowForward{
+            right: 0;
+        }
+
+        &--arrowHide{
+            display: none;
+        }
+    
+        &--picture{
+            // border: solid 2px blue;
+            object-fit: cover;
+            height: 415px;
+            width: 100%;
+            // width: 1240px;
+            border-radius: 30px;
+        }
+
+        &--compteur{
+            // background-color: rebeccapurple;
+            color: #FFFFFF;
+            width: 5%;
+            z-index: 1;
+            position: absolute;
+            margin-left: 50%;
+            margin-bottom: 1rem;
+            text-align: center;
+            bottom: 0;
+        }
     }
+    
 
     &__info{
         // border: solid 2px red;
@@ -20,8 +59,6 @@
         &--title{
             font-size: 36px;
         }
-
-
     }
 
     &__infoHost{

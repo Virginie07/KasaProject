@@ -2,7 +2,7 @@ $colour-primary: #ff6060;
 $colour-secondary: #f6f6f6;
 
 .Appheader {
-  border: solid 2px red;
+  // border: solid 2px red;
   height: 6rem;
   width: 100%;
   display: flex;
@@ -11,18 +11,19 @@ $colour-secondary: #f6f6f6;
   
 
   &__logo {
+    // border: solid 2px red;
     padding-top: 1rem;
     width: 190px;
     height: 68px;
   }
 
   &__nav {
-    border: solid 2px blue;
+    // border: solid 2px blue;
     width: 16rem;
     margin-left: 70%;
 
     &--list {
-      border: solid 2px green;
+      // border: solid 2px green;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -45,9 +46,11 @@ $colour-secondary: #f6f6f6;
     &--listItem:hover{
       border-bottom: solid 2px #ff6060;
     }
+
   }
 }
 
+// RESPONSIVE..................................
 
 @media (max-width:1440px){
   .Appheader {
@@ -115,7 +118,7 @@ $colour-secondary: #f6f6f6;
   .Appheader {
 
     &__logo {
-      width: 140px;
+      width: 100px;
       height: 50px;
     }
 
@@ -129,14 +132,36 @@ $colour-secondary: #f6f6f6;
   }
 }
 
-@media (max-width:460px){
+@media (max-width:470px){
   .Appheader {
+
+    &__logo {
+      margin-top: 1rem;
+    }
 
     &__nav {
       margin-left: 5%;
 
+      &--list {
+        padding-left: 2rem;
+        height: 100%;     
+      }
+
       &--listItem {
         font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width:460px){
+  .Appheader {
+
+    &__nav {
+      margin-left: 0;
+
+      &--listItem {
+        font-size: 12px;
       }
     }
   }

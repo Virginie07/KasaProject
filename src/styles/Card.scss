@@ -1,18 +1,19 @@
 .carditem {
-  // border: solid 2px green;
-  background: #ff6060;
+  // border: solid 6px green;
+  // background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  
   height: 340px;
   width: 340px;
   border-radius: 20px;
   margin: 4rem 3rem 2rem 3rem;
   display: flex;
-  // align-items: flex-end;
   flex-direction: column;
-
+  position: relative;
 
   &__lienNav {
-    text-decoration: none;
     // border: solid 2px purple;
+    text-decoration: none;
+   
 
     &--pic{
       // border: solid 2px blue;
@@ -20,21 +21,37 @@
       border-radius: 20px;
       height: 340px;
       width: 340px;
-      // margin: 0.4rem 0.4rem 0.4rem 0.6rem;
-      // height: 270px;
-      // width: 320px;
+      opacity: 60;
     }
 
     &--titre {
       // border: solid 2px red;
-      // margin: 0.2rem 0.5rem 0.5rem 0.5rem;
       color: white;
       width: 200px;
       z-index: 1;
       position: absolute;
-      margin-top: -3.5rem;
+      margin-top: -4rem;
       margin-left: 0.5rem;
-      // padding: 0.5rem;
+    }
+
+    &--over{
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.305));
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
     }
   }
 }
+
+// @media (max-width:1440px){
+//   .carditem {  
+//     &--pic{
+//       height: 500px;
+//       width: 500px;
+
+//     }
+//   }
+// }

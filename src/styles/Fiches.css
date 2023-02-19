@@ -1,11 +1,42 @@
 .fiche {
   color: #ff6060;
 }
-.fiche__picture {
+.fiche__galerie {
+  display: flex;
+  position: relative;
+  transform: 50%;
+}
+.fiche__galerie--arrow {
+  height: 6rem;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+.fiche__galerie--arrowBack {
+  left: 1;
+}
+.fiche__galerie--arrowForward {
+  right: 0;
+}
+.fiche__galerie--arrowHide {
+  display: none;
+}
+.fiche__galerie--picture {
   object-fit: cover;
   height: 415px;
   width: 100%;
   border-radius: 30px;
+}
+.fiche__galerie--compteur {
+  color: #FFFFFF;
+  width: 5%;
+  z-index: 1;
+  position: absolute;
+  margin-left: 50%;
+  margin-bottom: 1rem;
+  text-align: center;
+  bottom: 0;
 }
 .fiche__info {
   display: flex;
