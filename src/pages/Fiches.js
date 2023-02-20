@@ -102,7 +102,7 @@ const Fiches = () => {
         </div>
 
         <div className="fiche__collapses">
-          <Collapse title={"Description"} description={itemData.description} />
+          <Collapse title={"Description"} description={itemData.description} className='fiche__collapses--enTete'/>
 
           <Collapse
             title={"Équipements"}

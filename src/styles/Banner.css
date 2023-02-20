@@ -7,6 +7,7 @@
   border-radius: 20px;
 }
 .bannerContain__view--cover {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.305));
   position: absolute;
   width: 95%;
   height: 223px;

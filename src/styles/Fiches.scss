@@ -119,16 +119,137 @@
 }
 
 
+@media (max-width:1300px){
+    .fiche{       
+        &__infoDetail{
+            &--title{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width:1130px){
+    .fiche{       
+        &__infoDetail{
+            &--title{
+                font-size: 28px;
+            }
+        }
+    }
+}
+
 @media (max-width:885px){
-    .fiche{
-    
+    .fiche{   
+        &__infoDetail{
+            &--title{
+                font-size: 22px;
+            }
+
+            &--lieu{
+                font-size: 14px;
+            }
+        }
+
         &__notes{    
             &--tagListItem{
                 padding: 0.2rem 1.5rem 0.2rem 1.5rem;
                 font-size: 16px;
             }
+        }  
+    }
+}
+
+@media (max-width:790px){
+    .fiche{   
+        &__infoDetail{
+            &--title{
+                font-size: 18px;
+            }
         }
+
+        &__notes{    
+            &--tagListItem{
+                padding: 0.2rem 1rem 0.2rem 1rem;
+                font-size: 14px;
+            }
+        }  
+    }
+}
+
+@media (max-width:690px){
+    .fiche{   
+        &__notes{    
+            &--tagListItem{
+                padding: 0.2rem 1rem 0.2rem 1rem;
+                font-size: 10px;
+            }
+        }  
+    }
+}
+
+@media (max-width:675px){
+    .fiche{   
+
+        &__infoDetail{
+            &--title{
+                font-size: 16px;
+            }
+
+            &--lieu{
+                font-size: 12px;
+            }
+        }
+
+        &__infoHost{
+            border: solid 2px fuchsia;
     
-   
+            &--name{
+                font-size: 14px;
+            }
+    
+            &--pic{
+                width: 58px;
+                height: 58px;      
+            }
+        }
+
+
+        &__notes{    
+
+            &--tagList{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &--tagListItem{
+                padding: 0.2rem 1rem 0.2rem 1rem;
+                font-size: 10px;
+            }
+        }  
+    }
+}
+
+@media (max-width:510px){
+    .fiche{   
+        &__infoDetail{
+            &--title{
+                font-size: 14px;
+                padding-bottom: 1rem;
+            }
+        }
+
+        &__infoHost{
+            border: solid 2px fuchsia;
+    
+            &--name{
+                font-size: 12px;
+            }
+    
+            &--pic{
+                width: 54px;
+                height: 54px;      
+            }
+        }
     }
 }
