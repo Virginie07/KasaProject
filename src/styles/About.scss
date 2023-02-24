@@ -16,4 +16,17 @@
     
 }
 
+@media (max-width:376px){
+    .about{
+        &__collapses{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            .collapse{
+                width: 100%;     
+            }
+        }
+        
+    }
+}
 

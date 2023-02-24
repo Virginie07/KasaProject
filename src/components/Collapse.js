@@ -16,12 +16,12 @@ const Collapse = (props) => {
           src={Chevron}
           alt="chevron"
           onClick={() => setCount((previousState) => !previousState)}
-          className={`${count ? "collapse__headbarre--chevron" : "collapse__headbarre--chevronUp"}`}
+          className={`${count ? "collapse__headbarre--chevronDown collapse__headbarre--chevron" : "collapse__headbarre--chevronUp collapse__headbarre--chevron"}`}
         />
       </div>
 
       <div className={`${count ? "collapse__descHide" : "collapse__descVisible"}`}>
-        <div>{props.description}</div>
+        <div className="collapse__descVisible--para">{props.description}</div>
       </div>
       
     </div>

@@ -7,14 +7,9 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 376px) {
   .contain {
-    justify-content: space-between;
-    padding: 3rem;
-  }
-}
-@media (max-width: 1100px) {
-  .contain {
-    justify-content: center;
+    background: #FFFFFF;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=Home.css.map */

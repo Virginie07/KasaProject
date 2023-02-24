@@ -33,13 +33,13 @@ const Fiches = () => {
           <img
             src={arrowBack}
             className={`${
-              itemData.pictures.length != 1
+              itemData.pictures.length !== 1
                 ? "fiche__galerie--arrowBack fiche__galerie--arrow"
                 : "fiche__galerie--arrowHide"
             }`}
             alt="arrow back"
             onClick={() =>
-              position == 0
+              position === 0
                 ? setPosition((position) => itemData.pictures.length - 1)
                 : setPosition((position) => position - 1)
             }
@@ -51,58 +51,72 @@ const Fiches = () => {
             alt="banner"
           />
 
-          <div className="fiche__galerie--compteur">
-            <p className="fiche__galerie--paraCompteur">
+          <div className={`${
+              itemData.pictures.length !== 1
+                ? "fiche__galerie--compteur"
+                : "fiche__galerie--compteurHide"
+            }`}>
+             <p className="fiche__galerie--paraCompteur">
               {position + 1}/{itemData.pictures.length}
-            </p>
+            </p> 
           </div>
 
           <img
             src={arrowForward}
             className={`${
-              itemData.pictures.length != 1
+              itemData.pictures.length !== 1
                 ? "fiche__galerie--arrowForward fiche__galerie--arrow"
                 : "fiche__galerie--arrowHide"
             }`}
             alt="arrow forward"
             onClick={() =>
-              position == itemData.pictures.length - 1
+              position === itemData.pictures.length - 1
                 ? setPosition((position) => 0)
                 : setPosition((position) => position + 1)
             }
           />
         </div>
 
-        <div className="fiche__info">
-          <div className="fiche__infoDetail">
-            <p className="fiche__infoDetail--title">{itemData.title}</p>
-            <p className="fiche__infoDetail--lieu">{itemData.location}</p>
+
+
+        <div className="fiche__infoHostRate">
+
+          <div className="fiche__info">
+            <div className="fiche__infoDetail">
+              <p className="fiche__infoDetail--title">{itemData.title}</p>
+              <p className="fiche__infoDetail--lieu">{itemData.location}</p>
+            </div>
+
+            <ul className="fiche__infoTag">
+              {itemData.tags.map((tag) => (
+                <li key={tag} className="fiche__infoTag--listItem">
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="fiche__infoHost">
-            <p className="fiche__infoHost--name">{itemData.host.name}</p>
-            <img
-              src={itemData.host.picture}
-              className="fiche__infoHost--pic"
-              alt="Host picture"
-            />
+
+          <div className="fiche__hostRate">
+            <div className="fiche__host">
+              <p className="fiche__host--name">{itemData.host.name}</p>
+              <img
+                src={itemData.host.picture}
+                className="fiche__host--pic"
+                alt="Host picture"
+              />
+            </div>
+
+            <div className="fiche__star">
+              <Stars rating={itemData.rating} />
+            </div>
           </div>
-        </div>
 
-        <div className="fiche__notes">
-          <ul className="fiche__notes--tagList">
-            {itemData.tags.map((tag) => (
-              <li key={tag} className="fiche__notes--tagListItem">
-                {tag}
-              </li>
-            ))}
-          </ul>
-
-          <Stars rating={itemData.rating} />
         </div>
 
         <div className="fiche__collapses">
-          <Collapse title={"Description"} description={itemData.description} className='fiche__collapses--enTete'/>
+
+          <Collapse title={"Description"} description={itemData.description} className='fiche__collapses--descriptionPara'/>
 
           <Collapse
             title={"Équipements"}

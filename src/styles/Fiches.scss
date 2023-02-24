@@ -4,7 +4,6 @@
     &__galerie{
         display: flex;
         position: relative;
-        transform: (50%);
 
         &--arrow{
             height: 6rem;
@@ -28,9 +27,8 @@
         &--picture{
             // border: solid 2px blue;
             object-fit: cover;
-            height: 415px;
+            height: 28rem;
             width: 100%;
-            // width: 1240px;
             border-radius: 30px;
         }
 
@@ -45,15 +43,37 @@
             text-align: center;
             bottom: 0;
         }
+
+        &--compteurHide{
+            display: none;
+        }
     }
     
+    &__infoHostRate{
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__info{
         // border: solid 2px red;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         margin-top: 1rem;
     }
+    &__infoTag{
+        list-style-type: none;
+        color: white;
+        display: flex;
+        margin-top: 1rem;
+
+        &--listItem{
+            background: #ff6060;
+            margin: 0.5rem;
+            padding: 0.2rem 2rem 0.2rem 2rem;
+            border-radius: 15px;
+        }
+    }   
 
     &__infoDetail{
         &--title{
@@ -61,16 +81,22 @@
         }
     }
 
-    &__infoHost{
+    &__hostRate{
         // border: solid 2px green;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+    }
 
+    &__host{
+        // border: solid 2px blueviolet;
+        display: flex;
+        width: 11rem;
+        margin-top: 1rem;
+        justify-content: space-between;
+        margin-bottom: 2rem;
         &--name{
             // border: solid 2px black;
             margin-top: 0.5rem;
-            height: 52px;
-            width: 93px;
         }
 
         &--pic{
@@ -78,27 +104,6 @@
             width: 64px;
             height: 64px;
             border-radius: 100%;           
-        }
-    }
-
-    &__notes{
-        // border: solid 2px green;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-        &--tagList{
-            list-style-type: none;
-            color: white;
-            display: flex;
-        }
-
-        &--tagListItem{
-            background: #ff6060;
-            margin: 0.5rem;
-            padding: 0.2rem 2rem 0.2rem 2rem;
-            border-radius: 15px;
         }
     }
 
@@ -119,81 +124,71 @@
 }
 
 
-@media (max-width:1300px){
-    .fiche{       
-        &__infoDetail{
-            &--title{
-                font-size: 32px;
+@media (max-width:769px){
+    .fiche{  
+        &__galerie{  
+            &--arrow{
+                height: 4rem;   
+                top: 47%;
             }
-        }
-    }
-}
 
-@media (max-width:1130px){
-    .fiche{       
-        &__infoDetail{
-            &--title{
-                font-size: 28px;
+            &--compteur{
+                display: none;
             }
-        }
-    }
-}
+        }  
 
-@media (max-width:885px){
-    .fiche{   
         &__infoDetail{
             &--title{
                 font-size: 22px;
             }
 
             &--lieu{
-                font-size: 14px;
+                font-size: 16px;
             }
         }
 
-        &__notes{    
-            &--tagListItem{
-                padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        &__infoTag{
+            &--listItem{
+                font-size: 14px; 
+                padding: 0.2rem 1rem 0.2rem 1rem;
+            }
+        }
+
+        &__host{
+            &--name{
+                font-size: 14px;
+            }
+    
+            &--pic{
+                width: 60px;
+                height: 60px;    
+            }
+        }
+
+        &__collapses{
+            &--equipmentListItem{
                 font-size: 16px;
             }
-        }  
+        }
     }
 }
 
-@media (max-width:790px){
-    .fiche{   
+@media (max-width:376px){
+    .fiche{
+        &__galerie{    
+            &--arrow{
+                height: 3rem;       
+                top: 45%;
+            }
+       
+            &--picture{
+                height: 16rem;
+            }    
+        }
+       
         &__infoDetail{
             &--title{
                 font-size: 18px;
-            }
-        }
-
-        &__notes{    
-            &--tagListItem{
-                padding: 0.2rem 1rem 0.2rem 1rem;
-                font-size: 14px;
-            }
-        }  
-    }
-}
-
-@media (max-width:690px){
-    .fiche{   
-        &__notes{    
-            &--tagListItem{
-                padding: 0.2rem 1rem 0.2rem 1rem;
-                font-size: 10px;
-            }
-        }  
-    }
-}
-
-@media (max-width:675px){
-    .fiche{   
-
-        &__infoDetail{
-            &--title{
-                font-size: 16px;
             }
 
             &--lieu{
@@ -201,55 +196,50 @@
             }
         }
 
-        &__infoHost{
-            border: solid 2px fuchsia;
-    
-            &--name{
-                font-size: 14px;
-            }
-    
-            &--pic{
-                width: 58px;
-                height: 58px;      
-            }
+        &__infoHostRate{
+            flex-direction: column;
         }
 
-
-        &__notes{    
-
-            &--tagList{
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            &--tagListItem{
-                padding: 0.2rem 1rem 0.2rem 1rem;
-                font-size: 10px;
-            }
-        }  
-    }
-}
-
-@media (max-width:510px){
-    .fiche{   
-        &__infoDetail{
-            &--title{
-                font-size: 14px;
-                padding-bottom: 1rem;
-            }
-        }
-
-        &__infoHost{
-            border: solid 2px fuchsia;
-    
-            &--name{
-                font-size: 12px;
-            }
-    
+        &__host{
+            width: 8.5rem; 
+            margin-top: 1rem;
+            margin-bottom: 0;
             &--pic{
                 width: 54px;
                 height: 54px;      
             }
         }
-    }
+
+        &__hostRate{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        &__star{
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        &__infoTag{
+            &--listItem{
+                margin: 0.2rem;
+                padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+                font-size: 12px;
+            }
+        }  
+        
+        &__collapses{
+            flex-direction: column;
+            
+            &--equipmentList{
+                width: 16rem;
+            }
+            
+            &--equipmentListItem{
+                font-size: 14px;
+            }
+        }
+    } 
+    
+    
 }

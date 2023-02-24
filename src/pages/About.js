@@ -1,5 +1,6 @@
 import React from "react";
-import ImgAbout from "../img/img_about.png";
+import ImgAboutDesktop from "../img/img_about.png";
+import ImgAboutMobile from "../img/img_aboutMobile.png";
 import "../styles/About.css";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse.js";
@@ -7,7 +8,7 @@ import Collapse from "../components/Collapse.js";
 const About = () => {
   return (
     <div className="about">
-      <Banner imgpath={ImgAbout} />
+      <Banner imgpathDesktop={ImgAboutDesktop} imgpathMobile = {ImgAboutMobile}/>
 
       <div className="about__collapses">
         <Collapse

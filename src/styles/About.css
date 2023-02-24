@@ -8,4 +8,14 @@
 .about__collapses .collapse {
   width: 80%;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 376px) {
+  .about__collapses {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about__collapses .collapse {
+    width: 100%;
+  }
 }/*# sourceMappingURL=About.css.map */

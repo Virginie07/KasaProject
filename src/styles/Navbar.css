@@ -26,86 +26,43 @@
 .Appheader__nav--listLink {
   text-decoration: none;
 }
+.Appheader__nav--listLinkActive {
+  border-bottom: solid 2px #ff6060;
+}
 .Appheader__nav--listItem {
   margin-right: 10px;
   color: #ff6060;
   cursor: pointer;
 }
-.Appheader__nav--listItem:hover {
+.Appheader__nav--listLink:hover {
   border-bottom: solid 2px #ff6060;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1025px) {
   .Appheader__nav {
     width: 12rem;
-    margin-left: 60%;
-  }
-}
-@media (max-width: 1110px) {
-  .Appheader__nav--listItem {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1040px) {
-  .Appheader__nav {
     margin-left: 50%;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 769px) {
   .Appheader__nav {
-    margin-left: 40%;
+    margin-left: 45%;
   }
 }
-@media (max-width: 755px) {
-  .Appheader__nav {
-    margin-left: 30%;
+@media (max-width: 376px) {
+  .Appheader {
+    padding-left: 0;
   }
-}
-@media (max-width: 620px) {
   .Appheader__logo {
-    width: 170px;
+    width: 165px;
     height: 61px;
-  }
-  .Appheader__nav {
-    margin-left: 20%;
-  }
-  .Appheader__nav--listItem {
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 540px) {
-  .Appheader__logo {
-    width: 100px;
-    height: 50px;
-  }
-  .Appheader__nav {
-    margin-left: 10%;
-  }
-  .Appheader__nav--listItem {
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 470px) {
-  .Appheader__logo {
     margin-top: 1rem;
   }
   .Appheader__nav {
-    margin-left: 5%;
-  }
-  .Appheader__nav--list {
-    padding-left: 2rem;
-    height: 100%;
-  }
-  .Appheader__nav--listItem {
-    font-size: 13px;
-  }
-}
-@media (max-width: 460px) {
-  .Appheader__nav {
-    margin-left: 0;
+    margin-left: 6%;
   }
   .Appheader__nav--listItem {
     font-size: 12px;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=Navbar.css.map */

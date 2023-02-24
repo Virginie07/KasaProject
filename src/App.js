@@ -7,12 +7,14 @@ import Nopage from "./pages/Nopage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-
 const App = () => {
   console.log("mon router", BrowserRouter);
   return (
     <BrowserRouter>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
@@ -25,8 +27,6 @@ const App = () => {
 };
 
 export default App;
-
-
 
 // const App = () => {
 //   return (

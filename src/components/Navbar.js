@@ -13,11 +13,16 @@ const Navbar = () => {
 
       <nav className="Appheader__nav">
         <ul className="Appheader__nav--list">
-          <NavLink to="/" className="Appheader__nav--listLink">
+
+          <NavLink to="/" className= {({isActive}) => (isActive ? "Appheader__nav--listLink Appheader__nav--listLinkActive" : "Appheader__nav--listLink")}>
             <li className="Appheader__nav--listItem">Accueil</li>
           </NavLink>
+          
+          {/* <NavLink to="/" className="Appheader__nav--listLink">
+            <li className="Appheader__nav--listItem">Accueil</li>
+          </NavLink> */}
 
-          <NavLink to="/About" className="Appheader__nav--listLink">
+          <NavLink to="/About" className= {({isActive}) => (isActive ? "Appheader__nav--listLink Appheader__nav--listLinkActive" : "Appheader__nav--listLink")}>
             <li className="Appheader__nav--listItem">A propos</li>
           </NavLink>
         </ul>

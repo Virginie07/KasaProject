@@ -1,9 +1,10 @@
-@media (max-width: 945px) {
-  .star {
-    border: solid 2px blue;
-    width: 6rem;
-  }
+.star__pic {
+  margin: 0.2rem;
+}
+
+@media (max-width: 769px) {
   .star__pic {
-    width: 0.7rem;
+    margin: 0.2rem;
+    width: 1rem;
   }
 }/*# sourceMappingURL=Star.css.map */

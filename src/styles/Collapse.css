@@ -28,7 +28,6 @@
   cursor: pointer;
 }
 .collapse__descHide {
-  border: solid 2px blue;
   margin-bottom: 2rem;
   display: none;
 }
@@ -36,4 +35,36 @@
   display: block;
   background: #F6F6F6;
   padding: 1rem;
+}
+.collapse__descVisible--para {
+  color: #ff6060;
+}
+
+@media (max-width: 769px) {
+  .collapse {
+    width: 100%;
+  }
+  .collapse__headbarre--title {
+    font-size: 17px;
+  }
+  .collapse__headbarre--chevron {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .collapse__descVisible--para {
+    font-size: 16px;
+  }
+}
+@media (max-width: 376px) {
+  .collapse__headbarre--title {
+    font-size: 14px;
+  }
+  .collapse__headbarre--chevron {
+    margin-top: 0.2rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  .collapse__descVisible--para {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Collapse.css.map */

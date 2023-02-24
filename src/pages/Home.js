@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <div className="kasamain">
-      <Banner imgpath={ImgBanner} texte={"Chez vous, partout et ailleurs"} />
+      <Banner imgpathDesktop={ImgBanner} imgpathMobile={ImgBanner} texte={"Chez vous, partout et ailleurs"} />
 
       <div className="contain">
         {kasaAnnonces.map((iKasaAnnonces, index) => (

@@ -17,3 +17,16 @@
     color: white;
   }
 }
+
+@media (max-width:420px){
+  .kasafooter { 
+    &__logo {
+      height: 39px;
+      width: 122px;
+    }
+
+    &__txt {
+      font-size: 12px;
+    }
+  }
+}

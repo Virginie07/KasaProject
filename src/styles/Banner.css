@@ -1,18 +1,26 @@
+.bannerContain__view {
+  position: relative;
+}
 .bannerContain__view--picture {
   object-fit: cover;
   position: relative;
   width: 100%;
-  height: 223px;
   margin-top: 1rem;
   border-radius: 20px;
 }
+.bannerContain__view--pictureDesktop {
+  display: block;
+}
+.bannerContain__view--pictureMobile {
+  display: none;
+}
 .bannerContain__view--cover {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.305));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
   position: absolute;
-  width: 95%;
-  height: 223px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  top: 8rem;
+  top: 0;
 }
 .bannerContain__title {
   width: 100%;
@@ -24,46 +32,38 @@
   text-align: center;
   left: 0;
   right: 0;
-  top: 13rem;
+  top: 36%;
 }
 
-@media (max-width: 1600px) {
-  .bannerContain__view--cover {
-    width: 93%;
-  }
-}
-@media (max-width: 970px) {
+@media (max-width: 1025px) {
   .bannerContain__title {
-    width: 60%;
+    top: 15%;
     font-size: 2.5rem;
-    margin-left: 4rem;
-    text-align: left;
-    top: 11rem;
-  }
-  .bannerContain__view--cover {
-    width: 88%;
   }
 }
-@media (max-width: 760px) {
-  .bannerContain__title {
-    width: 56%;
-  }
-}
-@media (max-width: 715px) {
-  .bannerContain__title {
-    width: 70%;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 769px) {
   .bannerContain__view--picture {
-    height: 175px;
-  }
-  .bannerContain__view--cover {
-    width: 82%;
-    height: 175px;
+    height: 10rem;
   }
   .bannerContain__title {
-    width: 80%;
-    font-size: 1.9rem;
+    top: 21%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 376px) {
+  .bannerContain__title {
+    text-align: left;
+    top: 24%;
+    margin-left: 1rem;
+    font-size: 1.7rem;
+  }
+  .bannerContain__view--pictureDesktop {
+    display: none;
+  }
+  .bannerContain__view--pictureMobile {
+    display: block;
+  }
+  .bannerContain__view--cover {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
   }
 }/*# sourceMappingURL=Banner.css.map */

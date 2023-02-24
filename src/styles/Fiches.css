@@ -4,7 +4,6 @@
 .fiche__galerie {
   display: flex;
   position: relative;
-  transform: 50%;
 }
 .fiche__galerie--arrow {
   height: 6rem;
@@ -24,7 +23,7 @@
 }
 .fiche__galerie--picture {
   object-fit: cover;
-  height: 415px;
+  height: 28rem;
   width: 100%;
   border-radius: 30px;
 }
@@ -38,45 +37,53 @@
   text-align: center;
   bottom: 0;
 }
+.fiche__galerie--compteurHide {
+  display: none;
+}
+.fiche__infoHostRate {
+  display: flex;
+  justify-content: space-between;
+}
 .fiche__info {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-top: 1rem;
 }
-.fiche__infoDetail--title {
-  font-size: 36px;
-}
-.fiche__infoHost {
-  display: flex;
-  justify-content: space-between;
-}
-.fiche__infoHost--name {
-  margin-top: 0.5rem;
-  height: 52px;
-  width: 93px;
-}
-.fiche__infoHost--pic {
-  object-fit: cover;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-}
-.fiche__notes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.fiche__notes--tagList {
+.fiche__infoTag {
   list-style-type: none;
   color: white;
   display: flex;
+  margin-top: 1rem;
 }
-.fiche__notes--tagListItem {
+.fiche__infoTag--listItem {
   background: #ff6060;
   margin: 0.5rem;
   padding: 0.2rem 2rem 0.2rem 2rem;
   border-radius: 15px;
+}
+.fiche__infoDetail--title {
+  font-size: 36px;
+}
+.fiche__hostRate {
+  display: flex;
+  flex-direction: column;
+}
+.fiche__host {
+  display: flex;
+  width: 11rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.fiche__host--name {
+  margin-top: 0.5rem;
+}
+.fiche__host--pic {
+  object-fit: cover;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
 }
 .fiche__collapses {
   display: flex;
@@ -91,82 +98,81 @@
   width: 50%;
 }
 
-@media (max-width: 1300px) {
-  .fiche__infoDetail--title {
-    font-size: 32px;
+@media (max-width: 769px) {
+  .fiche__galerie--arrow {
+    height: 4rem;
+    top: 47%;
   }
-}
-@media (max-width: 1130px) {
-  .fiche__infoDetail--title {
-    font-size: 28px;
+  .fiche__galerie--compteur {
+    display: none;
   }
-}
-@media (max-width: 885px) {
   .fiche__infoDetail--title {
     font-size: 22px;
   }
   .fiche__infoDetail--lieu {
+    font-size: 16px;
+  }
+  .fiche__infoTag--listItem {
+    font-size: 14px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+  }
+  .fiche__host--name {
     font-size: 14px;
   }
-  .fiche__notes--tagListItem {
-    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+  .fiche__host--pic {
+    width: 60px;
+    height: 60px;
+  }
+  .fiche__collapses--equipmentListItem {
     font-size: 16px;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 376px) {
+  .fiche__galerie--arrow {
+    height: 3rem;
+    top: 45%;
+  }
+  .fiche__galerie--picture {
+    height: 16rem;
+  }
   .fiche__infoDetail--title {
     font-size: 18px;
-  }
-  .fiche__notes--tagListItem {
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    font-size: 14px;
-  }
-}
-@media (max-width: 690px) {
-  .fiche__notes--tagListItem {
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    font-size: 10px;
-  }
-}
-@media (max-width: 675px) {
-  .fiche__infoDetail--title {
-    font-size: 16px;
   }
   .fiche__infoDetail--lieu {
     font-size: 12px;
   }
-  .fiche__infoHost {
-    border: solid 2px fuchsia;
+  .fiche__infoHostRate {
+    flex-direction: column;
   }
-  .fiche__infoHost--name {
-    font-size: 14px;
+  .fiche__host {
+    width: 8.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
-  .fiche__infoHost--pic {
-    width: 58px;
-    height: 58px;
-  }
-  .fiche__notes--tagList {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .fiche__notes--tagListItem {
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    font-size: 10px;
-  }
-}
-@media (max-width: 510px) {
-  .fiche__infoDetail--title {
-    font-size: 14px;
-    padding-bottom: 1rem;
-  }
-  .fiche__infoHost {
-    border: solid 2px fuchsia;
-  }
-  .fiche__infoHost--name {
-    font-size: 12px;
-  }
-  .fiche__infoHost--pic {
+  .fiche__host--pic {
     width: 54px;
     height: 54px;
+  }
+  .fiche__hostRate {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .fiche__star {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+  .fiche__infoTag--listItem {
+    margin: 0.2rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    font-size: 12px;
+  }
+  .fiche__collapses {
+    flex-direction: column;
+  }
+  .fiche__collapses--equipmentList {
+    width: 16rem;
+  }
+  .fiche__collapses--equipmentListItem {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=Fiches.css.map */

@@ -13,4 +13,14 @@
 }
 .kasafooter__txt {
   color: white;
+}
+
+@media (max-width: 420px) {
+  .kasafooter__logo {
+    height: 39px;
+    width: 122px;
+  }
+  .kasafooter__txt {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

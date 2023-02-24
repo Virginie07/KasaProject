@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 
 const Card = (props) => {
-  return (
-
-  
+  return (  
       <div className="carditem">
         
           <NavLink to={"/Fiches/"+ props.id} className="carditem__lienNav" >
