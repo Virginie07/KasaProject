@@ -27,20 +27,3 @@ const App = () => {
 };
 
 export default App;
-
-// const App = () => {
-//   return (
-//     <BrowserRouter>
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/About" element={<About />} />
-//         <Route path="/Fiches" element={<Fiches way = {iKasaAnnonces.id}/>} />
-//         <Route path="*" element={<Nopage />} />
-//       </Routes>
-//       <Footer />
-//     </BrowserRouter>
-//   );
-// };
-
-// export default App;
