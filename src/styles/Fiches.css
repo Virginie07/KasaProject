@@ -13,7 +13,7 @@
   cursor: pointer;
 }
 .fiche__galerie--arrowBack {
-  left: 1;
+  left: 1px;
 }
 .fiche__galerie--arrowForward {
   right: 0;

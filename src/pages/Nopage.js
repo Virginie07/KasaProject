@@ -5,7 +5,6 @@ import "../styles/Nopage.css";
 const Nopage = () => {
   return (
     <div>
-
       <div className="error">
         <p className="error__number">404</p>
         <p className="error__txt">
@@ -14,10 +13,11 @@ const Nopage = () => {
       </div>
 
       <NavLink to="/" className="linkError">
-        <li className="linkError__txtAccueil">Retourner sur la page d'accueil</li>
+        <li className="linkError__txtAccueil">
+          Retourner sur la page d'accueil
+        </li>
       </NavLink>
     </div>
-
   );
 };
 
