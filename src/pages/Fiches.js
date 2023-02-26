@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/index.css";
 import "../styles/Fiches.css";
@@ -9,19 +8,9 @@ import Stars from "../components/Stars.js";
 import Nopages from "./Nopage";
 import arrowBack from "../img/arrow_back.png";
 import arrowForward from "../img/arrow_forward.png";
-// import axios from "axios";
 
 const Fiches = () => {
   const [position, setPosition] = useState(0);
-
-  // useEffect(() => {
-  //   axios
-  //     .get("/annonces.json")
-  //     .then((res) => setPosition(res.data))
-  //     .catch((err) => console.log(err));
-
-  // }, []);
-
   const allParam = useParams();
   const paramId = allParam.id;
   const itemData = data.find((element) => element.id === paramId);
