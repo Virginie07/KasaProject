@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 import "../styles/index.css";
 import "../styles/Fiches.css";
-import data from "../data/annonces.json";
 import Collapse from "../components/Collapse.js";
 import Stars from "../components/Stars.js";
 import Nopages from "./Nopage";
@@ -11,9 +11,18 @@ import arrowForward from "../img/arrow_forward.png";
 
 const Fiches = () => {
   const [position, setPosition] = useState(0);
+  const [dataAnnonce, setDataAnnonce] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/annonces.json")
+      .then((res) => setDataAnnonce(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
   const allParam = useParams();
   const paramId = allParam.id;
-  const itemData = data.find((element) => element.id === paramId);
+  const itemData = dataAnnonce.find((element) => element.id === paramId);
 
   if (itemData) {
     return (
@@ -37,7 +46,7 @@ const Fiches = () => {
           <img
             src={itemData.pictures[position]}
             className="fiche__galerie--picture"
-            alt="banner"
+            alt="galerie"
           />
 
           <div
@@ -90,7 +99,7 @@ const Fiches = () => {
               <img
                 src={itemData.host.picture}
                 className="fiche__host--pic"
-                alt="Host picture"
+                alt="Host"
               />
             </div>
 
