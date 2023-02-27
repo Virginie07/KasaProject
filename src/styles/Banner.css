@@ -1,4 +1,4 @@
-.bannerContain__view {
+.bannerContain {
   position: relative;
 }
 .bannerContain__view--picture {
@@ -45,23 +45,24 @@
   .bannerContain__view--picture {
     height: 10rem;
   }
-  .bannerContain__title {
-    top: 21%;
-    font-size: 2rem;
-  }
-}
-@media (max-width: 376px) {
-  .bannerContain__title {
-    text-align: left;
-    top: 24%;
-    margin-left: 1rem;
-    font-size: 1.7rem;
-  }
   .bannerContain__view--pictureDesktop {
     display: none;
   }
   .bannerContain__view--pictureMobile {
     display: block;
+  }
+  .bannerContain__title {
+    text-align: left;
+    top: 21%;
+    font-size: 1.7rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .bannerContain__title {
+    top: 24%;
+    margin-left: 1rem;
+    font-size: 1.7rem;
   }
   .bannerContain__view--cover {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));

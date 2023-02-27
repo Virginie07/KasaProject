@@ -16,8 +16,8 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "Appheader__nav--listLink Appheader__nav--listLinkActive"
-                : "Appheader__nav--listLink"
+                ? "Appheader__nav--listLink Appheader__nav--listLinkActive linkHome"
+                : "Appheader__nav--listLink linkHome"
             }
           >
             <li className="Appheader__nav--listItem">Accueil</li>
@@ -27,8 +27,8 @@ const Navbar = () => {
             to="/About"
             className={({ isActive }) =>
               isActive
-                ? "Appheader__nav--listLink Appheader__nav--listLinkActive"
-                : "Appheader__nav--listLink"
+                ? "Appheader__nav--listLink Appheader__nav--listLinkActive linkAbout"
+                : "Appheader__nav--listLink linkAbout"
             }
           >
             <li className="Appheader__nav--listItem">A propos</li>

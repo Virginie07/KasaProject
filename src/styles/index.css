@@ -10,16 +10,6 @@
 }
 
 body {
-  margin: 1rem 3rem 1rem 3rem;
-}
-
-@media (max-width: 769px) {
-  body {
-    margin: 1rem 1rem 1rem 1rem;
-  }
-}
-@media (max-width: 376px) {
-  body {
-    margin: 0.5rem;
-  }
+  width: 95%;
+  margin: auto;
 }/*# sourceMappingURL=index.css.map */

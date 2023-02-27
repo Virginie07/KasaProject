@@ -1,8 +1,8 @@
 .carditem {
   height: 18rem;
-  width: 25%;
+  width: 30%;
   border-radius: 20px;
-  margin: 4rem 3rem 2rem 3rem;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -36,14 +36,10 @@
 
 @media (max-width: 1025px) {
   .carditem {
-    width: 36%;
+    width: 45%;
   }
 }
 @media (max-width: 769px) {
-  .carditem {
-    width: 40%;
-    margin: 4rem 1.5rem 2rem 1.5rem;
-  }
   .carditem__lienNav--titre {
     font-size: 16px;
   }
@@ -52,9 +48,13 @@
     height: 14rem;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 599px) {
   .carditem {
     width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .carditem {
     height: 14rem;
     margin: 3rem 1rem 3rem 1rem;
   }

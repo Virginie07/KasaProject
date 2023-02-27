@@ -11,7 +11,7 @@
     border-radius: 5px;
     padding: 0.2rem 1rem 0.2rem 1rem;
     font-weight: 100;
-    
+
     &--title {
       color: white;
     }
@@ -38,58 +38,57 @@
     display: none;
   }
 
-  &__descVisible{
+  &__descVisible {
     display: block;
-    background: #F6F6F6;
+    background: #f6f6f6;
     padding: 1rem;
 
-    &--para{
+    &--para {
       color: #ff6060;
-    }    
+    }
   }
 }
 
-
-@media (max-width:769px){
-  .collapse {  
+@media (max-width: 769px) {
+  .collapse {
     width: 100%;
-    &__headbarre {     
+    &__headbarre {
       &--title {
         font-size: 17px;
       }
-  
+
       &--chevron {
         height: 1.5rem;
         width: 1.5rem;
-      } 
+      }
     }
-  
-    &__descVisible{
-      &--para{
+
+    &__descVisible {
+      &--para {
         font-size: 16px;
-      }      
+      }
     }
   }
 }
 
-@media (max-width:376px){
-  .collapse {  
-    &__headbarre {     
+@media (max-width: 376px) {
+  .collapse {
+    &__headbarre {
       &--title {
         font-size: 14px;
       }
-  
+
       &--chevron {
         margin-top: 0.2rem;
         height: 1rem;
         width: 1rem;
-      } 
+      }
     }
-  
-    &__descVisible{
-      &--para{
+
+    &__descVisible {
+      &--para {
         font-size: 14px;
-      }      
+      }
     }
   }
 }

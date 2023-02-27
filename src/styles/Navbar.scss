@@ -7,8 +7,6 @@ $colour-secondary: #f6f6f6;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-left: 1rem;
-  
 
   &__logo {
     // border: solid 2px red;
@@ -18,71 +16,51 @@ $colour-secondary: #f6f6f6;
   }
 
   &__nav {
-    // border: solid 2px blue;
-    width: 16rem;
-    margin-left: 70%;
-
     &--list {
       // border: solid 2px green;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 1rem;
       margin-top: 0;
       list-style-type: none;
-      height: 100%;     
+      height: 100%;
+
+      .linkAbout {
+        margin-left: 25px;
+      }
     }
 
-    &--listLink{
+    &--listLink {
       text-decoration: none;
     }
 
-    &--listLinkActive{
+    &--listLinkActive {
       border-bottom: solid 2px #ff6060;
     }
 
     &--listItem {
-      margin-right: 10px;
       color: $colour-primary;
       cursor: pointer;
     }
 
-    &--listLink:hover{
+    &--listLink:hover {
       border-bottom: solid 2px #ff6060;
     }
-
   }
 }
 
 // RESPONSIVE..................................
 
-@media (max-width:1025px){
-  .Appheader {
-    &__nav {
-      width: 12rem;
-      margin-left: 50%;
-    }
-  }
-}
-
-@media (max-width:769px){
-  .Appheader {
-    &__nav {
-      margin-left: 45%;
-    }
-  }
-}
-
-@media (max-width:376px){
+@media (max-width: 376px) {
   .Appheader {
     padding-left: 0;
-  
+
     &__logo {
       width: 165px;
       height: 61px;
       margin-top: 1rem;
     }
-    
+
     &__nav {
       margin-left: 6%;
 
@@ -93,114 +71,3 @@ $colour-secondary: #f6f6f6;
     }
   }
 }
-
-// @media (max-width:1040px){
-//   .Appheader {
-//     &__nav {
-//       margin-left: 50%;
-//     }
-//   }
-// }
-
-// @media (max-width:870px){
-//   .Appheader {
-//     &__nav {
-//       margin-left: 40%;
-//     }
-//   }
-// }
-
-// @media (max-width:755px){
-//   .Appheader {
-//     &__nav {
-//       margin-left: 30%;
-//     }
-//   }
-// }
-
-// @media (max-width:620px){
-//   .Appheader {
-
-//     &__logo {
-//       width: 170px;
-//       height: 61px;
-//     }
-
-//     &__nav {
-//       margin-left: 20%;
-
-//       &--listItem {
-//         font-size: 14px;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width:540px){
-//   .Appheader {
-
-//     &__logo {
-//       width: 100px;
-//       height: 50px;
-//     }
-
-//     &__nav {
-//       margin-left: 10%;
-
-//       &--listItem {
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width:470px){
-//   .Appheader {
-
-//     &__logo {
-//       margin-top: 1rem;
-//     }
-
-//     &__nav {
-//       margin-left: 5%;
-
-//       &--list {
-//         padding-left: 2rem;
-//         height: 100%;     
-//       }
-
-//       &--listItem {
-//         font-size: 13px;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width:460px){
-//   .Appheader {
-
-//     &__nav {
-//       margin-left: 0;
-
-//       &--listItem {
-//         font-size: 12px;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width:320px){
-//   .Appheader {
-
-//     &__nav {
-//       margin-left: 0;
-
-//       &--listItem {
-//         font-size: 12px;
-//       }
-//     }
-//   }
-// }
-
-  
