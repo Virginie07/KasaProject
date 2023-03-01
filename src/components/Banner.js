@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Banner.css";
-import "../styles/index.css";
+import "../styles/Banner.scss";
+import "../styles/index.scss";
 
 const Banner = (props) => {
   return (

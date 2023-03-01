@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/index.css";
-import "../styles/Navbar.css";
+import "../styles/index.scss";
+import "../styles/Navbar.scss";
 import LogoKasa from "../img/logo_kasa.png";
 
 

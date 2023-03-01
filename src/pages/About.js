@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/About.css";
-import Banner from "../components/Banner";
+import "../styles/About.scss";
+import Banner from "../components/Banner.js";
 import Collapse from "../components/Collapse.js";
 import ImgAboutDesktop from "../img/img_about.png";
 import ImgAboutMobile from "../img/img_aboutMobile.png";

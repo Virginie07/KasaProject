@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Card.css";
+import "../styles/Card.scss";
 import { NavLink } from "react-router-dom";
 
 const Card = (props) => {
@@ -9,7 +9,7 @@ const Card = (props) => {
         <img
           src={props.imgLoc}
           className="carditem__lienNav--pic"
-          alt="Photo"
+          alt="Location"
         />
         <p className="carditem__lienNav--titre">{props.titleLoc}</p>
         <div className="carditem__lienNav--over"></div>

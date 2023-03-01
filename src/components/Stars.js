@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Star.css";
+import "../styles/Star.scss";
 import FullStar from "../img/fullStar.png";
 import EmptyStar from "../img/emptyStar.png";
 

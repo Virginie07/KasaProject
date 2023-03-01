@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "../styles/Home.css";
-import Banner from "../components/Banner";
-import Card from "../components/Card";
+import "../styles/Home.scss";
+import Banner from "../components/Banner.js";
+import Card from "../components/Card.js";
 import ImgBanner from "../img/img_banner.png";
+
+
 
 const Home = () => {
   const [kasaAnnonces, setkasaAnnonces] = useState([]);
-
+  
   useEffect(() => {
-    axios
-      .get("/annonces.json")
-      .then((res) => setkasaAnnonces(res.data))
-      .catch((err) => console.log(err));
+
+    fetch("/annonces.json")
+    .then((response) => {return response.json()})
+    .then((data) => {setkasaAnnonces(data)})
+
   }, []);
 
   return (
@@ -35,6 +37,9 @@ const Home = () => {
       </div>
     </div>
   );
+
 };
 
 export default Home;
+
+
